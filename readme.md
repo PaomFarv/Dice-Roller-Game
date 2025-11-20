@@ -1,4 +1,3 @@
-
 # Dice Roller Game
 
 A fun Python-based dice roller simulation that lets you roll multiple dice and see the results in an ASCII art format. The game calculates and displays the total points from the dice rolls. It uses the `colorama` library to add colorful output and the `random` library to simulate the dice rolls.
@@ -23,7 +22,7 @@ pip install colorama
 1. Clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/Dice-Roller-Game.git
+git clone https://github.com/paomfarv/Dice-Roller-Game.git
 ```
 
 2. Navigate into the project directory:

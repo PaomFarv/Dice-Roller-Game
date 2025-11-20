@@ -47,10 +47,9 @@ dice_faces = {
         "│   ●     ●   │",
         "└─────────────┘")
 }
-print("-"*200)
-input("Press ENTER to begin---")
+print("-"*150)
 while True:
-    num_of_dice = input(Fore.YELLOW + "Number of dice to roll: ")
+    num_of_dice = input(Fore.YELLOW + "Number of dice to roll (max 09): ")
     if num_of_dice.isdigit():
         num_of_dice = int(num_of_dice)
         break
@@ -75,5 +74,13 @@ print("\nCalculating----")
 time.sleep(1.5)
 print(Fore.GREEN + f"Total Points = {total_points}")
 
-print(Fore.WHITE + "-"*200)
-input("Press ENTER to quit.---")
+print(Fore.WHITE + "-"*150)
+play_again = input("Press ENTER to roll again ('Q' to quit).---")
+
+if play_again.lower() == 'q':
+    print("Thanks for playing! Goodbye.")
+    time.sleep(1)
+    exit()
+else:
+    print("\n"*5)
+    import DiceRoller
